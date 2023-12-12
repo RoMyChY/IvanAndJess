@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas Neue');
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=IBM Plex Sans Condensed');
+
+:root {
+    --primary: #2d40af;
+    --black: #000;
+    --white: #fff
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: Bebas Neue;
+}
+
+h2,
+h3 {
+    letter-spacing: 0.1rem;
+}
+
+hr {
+    height: 2px !important;
+    opacity: 1;
+}
+
+.hr-vr {
+    width: 15%;
+}
+
+.dashed-box {
+    border-top: dashed 2px;
+    border-bottom: dashed 2px;
+}
+
+.black-box {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.txt-primary {
+    color: var(--primary);
+    font-family: IBM Plex Sans Condensed;
+}
+
+.txt-title {
+    font-size: 3.8rem;
+}
+
+.txt-title-2 {
+    font-size: 3rem;
+}
+
+.title-heart {
+    font-size: 2rem;
+}
+
+@media (max-width: 767.98px) {
+    /* Small devices (less than 768px) */
+    .title-heart {
+        font-size: 1.4rem;
+    }
+}
+
+.txt-min {
+    font-size: 0.9rem;
+}
+
+.txt-space {
+    letter-spacing: 0.3rem;
+}
+
+.txt-vr {
+    writing-mode: vertical-lr;
+}
+
+.border-r {
+    border-right: solid 2px;
+}
+
+.amp {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.custom-btn {
+    font-family: IBM Plex Sans Condensed;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.custom-btn:hover {
+    color: var(--white);
+    transform: scale(1.1);
+    transition: ease-in 0.1s;
+}
+
+.bi-star-fill {
+    font-size: 32px;
+    color: var(--primary);
+}
+
+.bi-heart {
+    color: var(--primary);
+}
+
+.bi-heart-fill {
+    color: var(--primary);
+}
+
+#countdown-item {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+@media (max-width: 767.98px) {
+    /* Small devices (less than 768px) */
+    #countdown-item {
+        width: 100%;
+    }
+}
+
+#countdown-item > .simply-section {
+    margin: 1rem 0.25rem;
+    padding: 1rem;
+    background-color: var(--black);
+    color: var(--white);
+    flex-grow: 1;
+}
+
+#countdown-item > .simply-section > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#countdown-item > .simply-section > div > .simply-amount, .simply-word {
+    font-family: Bebas Neue;
+    font-size: 1.1rem;
+}
