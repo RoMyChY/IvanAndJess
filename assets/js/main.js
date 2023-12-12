@@ -1,11 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    AOS.init({
-        duration: 900,
-        easing: 'slide',
-        once: true
-    });
-
-
     let myCountdown = document.querySelector('#countdown-item');
 
     simplyCountdown(myCountdown, {
